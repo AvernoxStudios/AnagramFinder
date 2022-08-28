@@ -31,11 +31,7 @@ class AnagramFinder:
     
     def FindAnagramBySorting(self):
         # Alternative way which have better memory usage but worse time complexity: worst case O(n^2)
-        first = sorted(self.firstWord)
-        second = sorted(self.secondWord)
-        if first == second:
-            return True
-        return False
+        return sorted(self.firstWord) == sorted(self.secondWord)
         
         
     
